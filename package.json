@@ -1,0 +1,13 @@
+{
+ "name": "oque-o-andre-pensa",
+ "private": true,
+ "type": "module",
+ "scripts": {
+  "start": "python3 -m http.server 8080",
+  "test": "node --test tests/app.test.js tests/zip.test.js",
+  "build:css": "tailwindcss -c tailwind.config.cjs -i src/input.css -o styles.css --minify"
+ },
+ "devDependencies": {
+  "tailwindcss": "^3.4.17"
+ }
+}
